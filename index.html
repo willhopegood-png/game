@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tank Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Tank Game</h1>
+  <div id="hud">
+    <span>Score: <strong id="score">0</strong></span>
+    <span>Lives: <strong id="lives">3</strong></span>
+    <span>Level: <strong id="level">1</strong></span>
+  </div>
+  <canvas id="gameCanvas" width="700" height="500"></canvas>
+  <div id="controls">WASD / Arrow Keys to move &nbsp;|&nbsp; Space to shoot</div>
+
+  <div id="game-over">
+    <h2>Game Over</h2>
+    <p>Final Score: <strong id="final-score">0</strong></p>
+    <button id="restart-btn">Play Again</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
